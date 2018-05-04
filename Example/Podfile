@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'RELib_Example' do
+  pod 'RELib', :path => '../'
+
+  target 'RELib_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
