@@ -63,9 +63,9 @@
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		97F65EA56244E5B804A13C9C /* Pods_RELib_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RELib_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AB5C89F9DFD8ABFBDFFD3C78 /* Pods-RELib_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RELib_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RELib_Example/Pods-RELib_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		B6BF538588740D8A522E66D0 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
-		BFEBDD3E2619E8786B86EDBE /* RELib.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = RELib.podspec; path = ../RELib.podspec; sourceTree = "<group>"; };
-		F12BB69866B9FE872BE9CBA9 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		B6BF538588740D8A522E66D0 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		BFEBDD3E2619E8786B86EDBE /* RELib.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = RELib.podspec; path = ../RELib.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		F12BB69866B9FE872BE9CBA9 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		F5B0076361E29C5915D64458 /* Pods_RELib_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RELib_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -319,10 +319,12 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-RELib_Example/Pods-RELib_Example-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/AFNetworking/AFNetworking.framework",
 				"${BUILT_PRODUCTS_DIR}/RELib/RELib.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AFNetworking.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RELib.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;

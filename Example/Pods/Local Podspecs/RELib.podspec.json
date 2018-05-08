@@ -1,0 +1,36 @@
+{
+  "name": "RELib",
+  "version": "0.1.0",
+  "summary": "It‘s a test lib",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/Rare1020/RELib",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "Rare1020": "liqiqing@xueleyun.com"
+  },
+  "source": {
+    "git": "https://github.com/Rare1020/RELib.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "dependencies": {
+    "AFNetworking": [
+      "~> 3.2.1"
+    ]
+  },
+  "subspecs": [
+    {
+      "name": "Test",
+      "source_files": "RELib/Classes/Test/**/*.{c,h,hh,m,mm}"
+    },
+    {
+      "name": "Print",
+      "source_files": "RELib/Classes/Print/**/*.{c,h,hh,m,mm}"
+    }
+  ]
+}

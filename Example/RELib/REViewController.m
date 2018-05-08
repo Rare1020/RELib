@@ -7,7 +7,7 @@
 //
 
 #import "REViewController.h"
-
+#import "REPrint.h"
 @interface REViewController ()
 
 @end

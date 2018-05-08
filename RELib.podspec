@@ -9,7 +9,7 @@
 Pod::Spec.new do |s|
   s.name             = 'RELib'
   s.version          = '0.1.0'
-  s.summary          = 'A short description of RELib.'
+  s.summary          = 'It‘s a test lib'
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -29,8 +29,8 @@ TODO: Add long description of the pod here.
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.ios.deployment_target = '8.0'
-
-  s.source_files = 'RELib/Classes/**/*'
+  
+  #s.source_files = 'RELib/Classes/**/*'
   
   # s.resource_bundles = {
   #   'RELib' => ['RELib/Assets/*.png']
@@ -38,5 +38,16 @@ TODO: Add long description of the pod here.
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'
-  # s.dependency 'AFNetworking', '~> 2.3'
+  s.dependency 'AFNetworking', '~> 3.2.1'
+  
+  s.subspec 'Test' do |ss|
+      ss.source_files = 'RELib/Classes/Test/**/*.{c,h,hh,m,mm}'
+      
+  end
+  
+  s.subspec 'Print' do |ss|
+      ss.source_files = 'RELib/Classes/Print/**/*.{c,h,hh,m,mm}'
+  end
+  
+  
 end

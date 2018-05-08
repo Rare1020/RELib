@@ -1,0 +1,43 @@
+PODS:
+  - AFNetworking (3.2.1):
+    - AFNetworking/NSURLSession (= 3.2.1)
+    - AFNetworking/Reachability (= 3.2.1)
+    - AFNetworking/Security (= 3.2.1)
+    - AFNetworking/Serialization (= 3.2.1)
+    - AFNetworking/UIKit (= 3.2.1)
+  - AFNetworking/NSURLSession (3.2.1):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/Reachability (3.2.1)
+  - AFNetworking/Security (3.2.1)
+  - AFNetworking/Serialization (3.2.1)
+  - AFNetworking/UIKit (3.2.1):
+    - AFNetworking/NSURLSession
+  - RELib (0.1.0):
+    - AFNetworking (~> 3.2.1)
+    - RELib/Print (= 0.1.0)
+    - RELib/Test (= 0.1.0)
+  - RELib/Print (0.1.0):
+    - AFNetworking (~> 3.2.1)
+  - RELib/Test (0.1.0):
+    - AFNetworking (~> 3.2.1)
+
+DEPENDENCIES:
+  - RELib (from `../`)
+
+SPEC REPOS:
+  https://github.com/CocoaPods/Specs.git:
+    - AFNetworking
+
+EXTERNAL SOURCES:
+  RELib:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  AFNetworking: b6f891fdfaed196b46c7a83cf209e09697b94057
+  RELib: 65a17a666220b7ca284e29f13bd3f714c197044d
+
+PODFILE CHECKSUM: 0fc266bb903008124fc21066be3c7a3ab84f358a
+
+COCOAPODS: 1.5.0

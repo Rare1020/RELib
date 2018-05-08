@@ -1,0 +1,6 @@
+framework module RELib {
+  umbrella header "RELib-umbrella.h"
+
+  export *
+  module * { export * }
+}
